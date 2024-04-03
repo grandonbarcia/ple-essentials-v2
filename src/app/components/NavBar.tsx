@@ -17,11 +17,15 @@ export default function NavBar() {
     setMenuOpen(!isMenuOpen);
   }
   return (
-    <nav className="flex justify-center w-full h-24 shadow-xl bg-white">
-      <div className="md:container flex justify-between items-center h-full w-full px-4 2xl:px-16">
-        <Link href="./">
-          <Image src={Logo} alt="Logo" height={90} width={90} />
-        </Link>
+    <nav className="flex justify-center w-full shadow-xl bg-white z-50 sticky">
+      <div className="md:container flex justify-between items-center h-full w-full px-2 2xl:px-10">
+        <div className="flex items-center text-xl">
+          <Link href="./">
+            <Image src={Logo} alt="Logo" height={90} width={90} />
+          </Link>
+          <h1>PLE Essentials</h1>
+        </div>
+
         <div className="hidden md:block">
           <ul className="flex">
             <Link href="/about">
