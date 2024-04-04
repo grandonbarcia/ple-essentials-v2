@@ -25,7 +25,7 @@ function Circle() {
 
 export default function Landing() {
   return (
-    <section className="flex w-full justify-center items-center pt-12">
+    <section className="flex w-full justify-center items-center pt-12 pb-12">
       <div className="md:container flex justify-center items-center h-full w-full ">
         <div className="grid gap-10 w-1/3">
           <h1 className="text-4xl font-bold">Lorem ipsum dolor sit</h1>
