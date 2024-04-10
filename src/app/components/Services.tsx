@@ -17,7 +17,7 @@ function Circle({ color }: { color: string }) {
 export default function Services() {
   return (
     <section className="flex flex-col gap-24 w-full justify-center items-center pt-12 pb-12">
-      <h1 className="text-3xl font-bold">Our Services</h1>
+      <h1 className="text-5xl font-bold">Our Services</h1>
       <div className="flex w-2/3 justify-evenly items-center">
         <div className="grid gap-2 w-1/4  text-center bg-white pt-10 pb-10 px-5 rounded shadow z-20">
           <div className=" flex justify-center mx-auto w-full relative">

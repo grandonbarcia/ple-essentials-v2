@@ -17,7 +17,7 @@ function Circle({ color }: { color: string }) {
 export default function WhyChooseUse() {
   return (
     <section className="flex flex-col gap-16 w-full justify-center items-center pt-12 pb-12">
-      <h1 className="text-3xl font-bold">Why Choose Us</h1>
+      <h1 className="text-5xl font-bold">Why Choose Us</h1>
       <div className="flex w-2/3 justify-evenly items-center">
         <div className="grid gap-2 w-1/4  text-center  pt-10 pb-10 px-5 rounded  z-20">
           <div className=" flex justify-center mx-auto w-full relative">
