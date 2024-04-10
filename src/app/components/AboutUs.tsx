@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Shop2 from '../assets/shop.svg';
+import Shop2 from '../assets/undraw_web_shopping_re_owap.svg';
 
 function Circle() {
   return (
@@ -33,7 +33,7 @@ export default function AboutUs() {
           <Circle />
         </div>
         <div className="grid gap-10 w-1/3">
-          <h1 className="text-4xl font-bold">About Us</h1>
+          <h1 className="text-5xl font-bold">About Us</h1>
           <p className="text-xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

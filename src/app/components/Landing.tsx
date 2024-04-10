@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Shop from '../assets/shop.png';
 import Shop2 from '../assets/shop.svg';
 
 function Button({ children }: { children: string }) {
@@ -28,7 +27,7 @@ export default function Landing() {
     <section className="flex w-full justify-center items-center pt-12 pb-12">
       <div className="md:container flex justify-center items-center h-full w-full ">
         <div className="grid gap-10 w-1/3">
-          <h1 className="text-4xl font-bold">Lorem ipsum dolor sit</h1>
+          <h1 className="text-5xl font-bold">Lorem ipsum dolor sit</h1>
           <p className="text-xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
