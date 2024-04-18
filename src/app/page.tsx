@@ -6,10 +6,11 @@ import AboutUs from './components/AboutUs';
 import WhyChooseUse from './components/WhyChooseUs';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
+import './globals.css';
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-full">
       <NavBar />
       <Landing />
       <Services />
