@@ -44,6 +44,39 @@ function Button({ children }: { children: string }) {
   );
 }
 
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'block',
+        background: '#be185d',
+        borderRadius: '50%',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'block',
+        background: '#4f46e5',
+        borderRadius: '50%',
+        margin: 'auto',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 export default function Testimonial() {
   const settings = {
     dots: true,
@@ -51,16 +84,18 @@ export default function Testimonial() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
-    <section className="flex flex-col justify-center items-center gap-16  mt-12 mb-48 !z-20 relative">
-      <div className="w-2/4 m-auto !z-20 !relative">
-        <div className="mt-20 shadow-xl rounded-xl !z-50 !relative">
+    <section className="flex flex-col justify-center items-center gap-16  mt-12 mb-48 ">
+      <div className="w-2/4 m-auto ">
+        <div className="mt-20 shadow-xl rounded-xl ">
           <Slider {...settings}>
             {data.map((d) => (
               <div
                 key={d.name}
-                className=" !flex justify-center items-center h-[300px] rounded-xl !z-50 !relative"
+                className=" !flex justify-center items-center h-[300px] rounded-xl "
               >
                 <div className="h-56 rounded-t-xl flex justify-center items-center">
                   <Image
@@ -71,7 +106,7 @@ export default function Testimonial() {
                 </div>
                 <div className="flex flex-col w-2/3 gap-4 p-4 z-20">
                   <p className="text-xl font-semibold w-1/2">{d.name}</p>
-                  <p className="w-4/5">{d.review}</p>
+                  <p className="w-5/5">{d.review}</p>
                   <div className="w-1/3">
                     <Button>Read More</Button>
                   </div>
