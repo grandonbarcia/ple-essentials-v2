@@ -24,21 +24,21 @@ function Circle() {
 
 export default function Landing() {
   return (
-    <section className="flex w-full justify-center items-center pt-12 pb-12">
-      <div className="md:container flex justify-center items-center h-full w-full ">
-        <div className="grid gap-10 w-1/3">
+    <section className="flex w-full justify-center items-center pt-12 pb-12 ">
+      <div className="md:container flex flex-col md:flex-row justify-center items-center h-full w-full gap-12 ">
+        <div className="grid gap-10 text-center w-4/5 md:text-left md:w-1/3">
           <h1 className="text-5xl font-bold">Lorem ipsum dolor sit</h1>
           <p className="text-xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo
           </p>
-          <div className="flex gap-5">
+          <div className="flex justify-evenly md:justify-normal md:gap-5">
             <Button> Read More </Button>
             <Button> Contact Us </Button>
           </div>
         </div>
-        <div className=" w-1/2 z-10">
+        <div className="w-4/5 md:w-1/2 z-10">
           <Image src={Shop2} alt="shopping" />
         </div>
         <div className="absolute ml-[1000px] mt-[-100px]">

@@ -25,14 +25,14 @@ function Button({ children }: { children: string }) {
 export default function AboutUs() {
   return (
     <section className="flex w-full justify-center items-center pt-12 pb-12">
-      <div className="md:container flex justify-center items-center h-full w-full ">
-        <div className=" w-1/2 z-10">
+      <div className="md:container flex flex-col md:flex-row justify-center items-center h-full w-full ">
+        <div className="w-4/5 md:w-1/2 z-10">
           <Image src={Shop2} alt="shopping" />
         </div>
         <div className="absolute mr-[1000px] mt-[-100px]">
           <Circle />
         </div>
-        <div className="grid gap-10 w-1/3">
+        <div className="grid gap-10 w-4/5 md:w-1/3 z-10">
           <h1 className="text-5xl font-bold">About Us</h1>
           <p className="text-xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

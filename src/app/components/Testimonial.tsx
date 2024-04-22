@@ -89,27 +89,26 @@ export default function Testimonial() {
   };
   return (
     <section className="flex flex-col justify-center items-center gap-16  mt-12 mb-48 ">
-      <div className="w-2/4 m-auto ">
+      <div className="w-4/5 md:w-2/4 m-auto ">
         <div className="mt-20 shadow-xl rounded-xl ">
           <Slider {...settings}>
             {data.map((d) => (
               <div
                 key={d.name}
-                className=" !flex justify-center items-center h-[300px] rounded-xl "
+                className="!flex justify-center items-center rounded-xl "
               >
                 <div className="h-56 rounded-t-xl flex justify-center items-center">
                   <Image
                     src={d.img}
                     alt=""
-                    className="h-44 w-44 rounded-full"
+                    className="h-32 w-32 md:h-44 md:w-44 rounded-full"
                   />
                 </div>
-                <div className="flex flex-col w-2/3 gap-4 p-4 z-20">
-                  <p className="text-xl font-semibold w-1/2">{d.name}</p>
+                <div className="flex flex-col w-2/3 gap-4 p-4 ">
+                  <p className="text-xl font-semibold w-full md:w-1/2">
+                    {d.name}
+                  </p>
                   <p className="w-5/5">{d.review}</p>
-                  <div className="w-1/3">
-                    <Button>Read More</Button>
-                  </div>
                 </div>
               </div>
             ))}

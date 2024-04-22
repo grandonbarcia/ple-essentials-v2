@@ -25,8 +25,8 @@ function Circle() {
 export default function Contact() {
   return (
     <section className="flex w-full justify-center items-center pt-12 pb-12">
-      <div className="md:container flex justify-evenly items-center h-full w-full ">
-        <div className="w-full lg:w-1/3 rounded-2xl ">
+      <div className="md:container flex flex-col md:flex-row justify-evenly items-center h-full w-full gap-10 md:gap-0 ">
+        <div className="w-4/5 md:w-full lg:w-1/3 rounded-2xl ">
           <div className="flex">
             <h1 className="font-bold uppercase text-5xl">Send us a message</h1>
           </div>
@@ -62,7 +62,7 @@ export default function Contact() {
             <Button>Send Message</Button>
           </div>
         </div>
-        <div className=" w-1/2 z-10">
+        <div className="w-4/5 md:w-1/2 z-10">
           <Image src={Shop2} alt="shopping" />
         </div>
         <div className="absolute ml-[1000px] mt-[-100px]">
